@@ -173,6 +173,10 @@ The analysis revealed that **CIBIL Score** is the most influential factor in det
 * Matplotlib
 * Scikit-Learn
 * XGBoost
+* FastAPI
+* Pydantic
+* Streamlit
+* Uvicorn
 * Jupyter Notebook
 
 ---
@@ -182,8 +186,11 @@ The analysis revealed that **CIBIL Score** is the most influential factor in det
 ```text
 Loan-Approval-Prediction/
 │
+├── app.py                     # FastAPI Backend
+├── frontend.py                # Streamlit Frontend
+├── loan_model.pkl             # Trained XGBoost Model
 ├── loan_approval_dataset.csv
-├── main.ipynb
+├── main.ipynb                 # Model Training Notebook
 ├── README.md
 └── requirements.txt
 ```
@@ -192,21 +199,20 @@ Loan-Approval-Prediction/
 
 ## Key Results
 
-* Built and evaluated multiple classification models.
-* Improved accuracy from **91.16% (Logistic Regression)** to **97.72% (XGBoost)**.
-* Reduced classification errors significantly using ensemble learning techniques.
-* Identified CIBIL Score as the most important predictor for loan approval decisions.
-* Achieved strong performance on unseen test data with excellent precision and recall.
+* Developed a complete end-to-end machine learning application.
+* Built a FastAPI backend for real-time loan approval prediction.
+* Developed a Streamlit frontend for user interaction.
+* Successfully integrated the trained XGBoost model into a production-style workflow.
 
 ---
 
 ## Future Improvements
 
-* Hyperparameter tuning using Grid Search and Random Search
-* Cross-validation for more robust evaluation
-* Real-time prediction system
-* Model deployment and monitoring
-* Explainable AI techniques for prediction interpretation
+* Cloud deployment (Render, Railway, AWS, Azure)
+* Docker containerization
+* Prediction probability scores
+* Explainable AI using SHAP
+* Model monitoring and logging
 
 ---
 
