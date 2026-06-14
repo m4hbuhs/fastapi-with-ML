@@ -136,20 +136,21 @@ The models were evaluated using:
 * F1 Score
 * Confusion Matrix
 
-### Random Forest Results
+### XGBoost Confusion Matrix
 
-Confusion Matrix:
+| | Predicted Approved | Predicted Rejected |
+|------|------:|------:|
+| Actual Approved | 1042 | 12 |
+| Actual Rejected | 24 | 630 |
 
-|                 | Predicted Approved | Predicted Rejected |
-| --------------- | -----------------: | -----------------: |
-| Actual Approved |               1033 |                 21 |
-| Actual Rejected |                 26 |                628 |
+### Metrics
 
-Accuracy:
+| Metric | Score |
+|---------|---------|
+| Accuracy | 97.89% |
+| Weighted F1 Score | 97.88% |
 
-97.25%
 
----
 
 ## Feature Importance Analysis
 
@@ -220,4 +221,3 @@ Loan-Approval-Prediction/
 
 **Shubham**
 
-Machine Learning | Data Science | Backend Development
