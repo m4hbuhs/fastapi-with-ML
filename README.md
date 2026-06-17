@@ -184,16 +184,27 @@ The analysis revealed that **CIBIL Score** is the most influential factor in det
 
 ## Project Structure
 
-```text
-Loan-Approval-Prediction/
+Project Structure
+BANK-LOAN-APPROVAL/
 │
-├── app.py                     # FastAPI Backend
-├── frontend.py                # Streamlit Frontend
-├── loan_model.pkl             # Trained XGBoost Model
-├── loan_approval_dataset.csv
-├── main.ipynb                 # Model Training Notebook
-├── README.md
-└── requirements.txt
+├── model/
+│   ├── loan_model.pkl
+│   └── predict.py
+│
+├── schema/
+│   ├── user_input.py
+│   └── prediction_response.py
+│
+├── app.py                      # FastAPI backend
+├── frontend.py                 # Streamlit frontend
+├── main.ipynb                  # Model training & experimentation
+├── loan_approval_dataset.csv   # Dataset
+├── Dockerfile                  # Docker configuration
+├── .dockerignore
+├── .gitignore
+├── requirements.txt
+└── README.md
+
 ```
 
 ---
@@ -204,6 +215,16 @@ Loan-Approval-Prediction/
 * Built a FastAPI backend for real-time loan approval prediction.
 * Developed a Streamlit frontend for user interaction.
 * Successfully integrated the trained XGBoost model into a production-style workflow.
+
+---
+## Docker Support (In Progress)
+
+Docker configuration has been added to the project and is currently under development for streamlined deployment and environment consistency.
+
+Planned Features:
+- Dockerized FastAPI service
+- Simplified deployment workflow
+- Cloud-ready container setup
 
 ---
 
